@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0, 0.7)url(image.jpg)center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+span{
+    color: orangered;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 12% 5%;
+}
+.content{
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    flex: 1 1 40rem;
+    padding: 20px;
+    font-size: 20px;
+    word-spacing: 5px;
+    
+    
+}

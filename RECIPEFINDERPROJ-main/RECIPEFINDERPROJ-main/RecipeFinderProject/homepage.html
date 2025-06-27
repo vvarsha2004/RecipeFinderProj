@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe <span>Finder</span></h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutpage.html">ABOUT </a></li>
+                <li><a href="recipepage.html">RECIPE </a></li>
+                <li><a href="loginpage.html">LOGIN</a></li>
+            </ul>
+        </div>   
+    </div>
+    <section>
+    <div class="content">
+        <h2>Welcome to Recipe Finder</h2>
+        <h1>"Find the Perfect Recipe for Every Craving!"</h1>
+        <p>Dive into flavor with our Recipe Finder! Craving comfort food or something impressive? Search by ingredients or cuisine to unleash your inner chef. Your next delicious adventure awaits!</p>
+
+    </div>
+    <div class="searchbar">
+        <input type="text" id="search-input" placeholder="Search ingredients">
+        <div class="submit">
+            <button onclick="searchRecipe()">Submit</button>
+        </div>
+    </div>
+    </section>
+    <script>
+        function searchRecipe() {
+            const searchInput = document.getElementById('search-input').value.toLowerCase();
+
+            if (searchInput === 'potato') {
+                window.location.href = 'potato.html';
+            } else if (searchInput === 'chicken') {
+                window.location.href = 'chicken.html';
+            } else if (searchInput === 'paneer') {
+                window.location.href = 'paneer.html';
+            } else if (searchInput === 'egg') {
+                window.location.href = 'egg.html';
+            } else if (searchInput === 'banana') {
+                window.location.href = 'banana.html';
+            } else {
+                alert('Please search for either "potato" or "chicken" or "paneer" or "egg" or "banana".');
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

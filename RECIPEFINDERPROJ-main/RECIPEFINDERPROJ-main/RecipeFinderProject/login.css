@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0, 0.7)url(image.jpg)center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+span{
+    color: orangered;
+}
+.navbar ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+.container {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 25px;
+    max-width: 500px;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.head {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(147, 14, 14) ;
+
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+   
+}
+.inputbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    padding-bottom: 10px;
+}
+.inputbox:nth-child(2n) {
+    justify-content: end;
+}
+.inputbox label,input{
+    margin:5px;
+    width: 80%;
+}
+.inputbox label{
+    font-size: 17px;
+    font-weight: bold;
+}
+.inputbox input{
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button button{
+    background-color: orangered;
+    margin-right: 29px;
+    color: white;
+    border-color: red;
+    padding: 9px 9px;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+    }
+    .inputbox {
+        display: contents;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 10%;
+        margin-right: 10%;
+        max-width: 80%;
+    }
+    .inputbox {
+        width: 50%;
+    }
+}
